@@ -1,0 +1,12 @@
+{
+  "itemGroup.handybenches": "Handy Benches",
+  "creativetab.handybenches": "Handy Benches",
+
+  "container.crafting": "Crafting Table",
+  "container.stonecutter": "Stonecutter",
+  "container.cartography_table" : "Cartography Table",
+
+  "item.handybenches.handy_crafting_table": "Handy Crafting Table",
+  "item.handybenches.handy_stonecutter": "Handy Stonecutter",
+  "item.handybenches.handy_cartography_table": "Handy Cartography Table"
+}

@@ -1,6 +1,6 @@
-package net.manny.pockettools.common.item;
+package net.manny.handybenches.common.item;
 
-import net.manny.pockettools.common.menu.PocketCartographyMenu;
+import net.manny.handybenches.common.menu.HandyCartographyMenu;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
@@ -14,11 +14,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
-public class PocketCartographyTable extends Item {
+public class HandyCartographyTable extends Item {
 
     private static final Component CONTAINER_TITLE = Component.translatable("container.cartography_table");
 
-    public PocketCartographyTable(Properties properties) {
+    public HandyCartographyTable(Properties properties) {
         super(properties);
     }
 
@@ -35,7 +35,7 @@ public class PocketCartographyTable extends Item {
 
                 @Override
                 public @Nullable AbstractContainerMenu createMenu(int i, Inventory inventory, Player player) {
-                    return new PocketCartographyMenu(i, inventory, player);
+                    return new HandyCartographyMenu(i, inventory, player);
                 }
             };
             serverPlayer.openMenu(menuProvider);

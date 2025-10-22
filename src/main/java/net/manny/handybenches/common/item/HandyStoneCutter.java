@@ -1,6 +1,6 @@
-package net.manny.pockettools.common.item;
+package net.manny.handybenches.common.item;
 
-import net.manny.pockettools.common.menu.PocketStoneCutterMenu;
+import net.manny.handybenches.common.menu.HandyStoneCutterMenu;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
@@ -14,11 +14,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
-public class PocketStoneCutter extends Item {
+public class HandyStoneCutter extends Item {
 
     private static final Component CONTAINER_TITLE = Component.translatable("container.stonecutter");
 
-    public PocketStoneCutter(Properties properties) {
+    public HandyStoneCutter(Properties properties) {
         super(properties);
     }
 
@@ -35,7 +35,7 @@ public class PocketStoneCutter extends Item {
 
                 @Override
                 public @Nullable AbstractContainerMenu createMenu(int i, Inventory inventory, Player player) {
-                    return new PocketStoneCutterMenu(i, inventory, player);
+                    return new HandyStoneCutterMenu(i, inventory, player);
                 }
             };
             serverPlayer.openMenu(menuProvider);

@@ -1,4 +1,4 @@
-package net.manny.pockettools.common.menu;
+package net.manny.handybenches.common.menu;
 
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.Container;
@@ -16,14 +16,14 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.saveddata.maps.MapItemSavedData;
 import org.jetbrains.annotations.NotNull;
 
-public class PocketCartographyMenu extends CartographyTableMenu {
+public class HandyCartographyMenu extends CartographyTableMenu {
 
     private final Level level;
     private final Player player;
     private final Container container;
     private final ResultContainer resultContainer;
 
-    public PocketCartographyMenu(int containerId, Inventory playerInventory) {
+    public HandyCartographyMenu(int containerId, Inventory playerInventory) {
         super(containerId, playerInventory);
         this.player = playerInventory.player;
         this.level = player.level();
@@ -31,7 +31,7 @@ public class PocketCartographyMenu extends CartographyTableMenu {
         this.resultContainer = super.resultContainer;
     }
 
-    public PocketCartographyMenu(int containerId, Inventory playerInventory, Player player) {
+    public HandyCartographyMenu(int containerId, Inventory playerInventory, Player player) {
         super(containerId, playerInventory);
         this.player = player;
         this.level = player.level();
@@ -39,7 +39,7 @@ public class PocketCartographyMenu extends CartographyTableMenu {
         this.resultContainer = super.resultContainer;
     }
 
-    public PocketCartographyMenu(int containerId, Inventory playerInventory, ContainerLevelAccess access) {
+    public HandyCartographyMenu(int containerId, Inventory playerInventory, ContainerLevelAccess access) {
         super(containerId, playerInventory, access);
         this.player = playerInventory.player;
         this.level = player.level();
