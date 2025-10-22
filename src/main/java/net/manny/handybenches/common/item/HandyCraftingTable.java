@@ -47,9 +47,4 @@ public class HandyCraftingTable extends Item {
 
         return InteractionResultHolder.success(player.getItemInHand(usedHand));
     }
-
-
-
-
-
 }
