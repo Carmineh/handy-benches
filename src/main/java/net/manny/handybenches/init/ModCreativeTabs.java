@@ -1,6 +1,6 @@
-package net.manny.pockettools.init;
+package net.manny.handybenches.init;
 
-import net.manny.pockettools.PocketTools;
+import net.manny.handybenches.HandyBenches;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -13,17 +13,17 @@ import java.util.function.Supplier;
 
 public class ModCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_TABS =
-            DeferredRegister.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), PocketTools.MODID);
+            DeferredRegister.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), HandyBenches.MODID);
 
-    public static final Supplier<CreativeModeTab> POCKET_TOOLS_TAB = CREATIVE_TABS.register("pocket_tools_tab",
+    public static final Supplier<CreativeModeTab> HANDY_TOOLS_TAB = CREATIVE_TABS.register("handy_benches_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModItems.POCKET_CRAFTING_TABLE.get()))
-                    .title(Component.translatable("creativetab.pockettools"))
+                    .icon(() -> new ItemStack(ModItems.HANDY_CRAFTING_TABLE.get()))
+                    .title(Component.translatable("creativetab.handybenches"))
                     .displayItems(
                             (itemDisplayParameters, output) -> {
-                                output.accept(ModItems.POCKET_CRAFTING_TABLE.get());
-                                output.accept(ModItems.POCKET_STONECUTTER.get());
-                                output.accept(ModItems.POCKET_CARTOGRAPHY_TABLE.get());
+                                output.accept(ModItems.HANDY_CRAFTING_TABLE.get());
+                                output.accept(ModItems.HANDY_STONECUTTER.get());
+                                output.accept(ModItems.HANDY_CARTOGRAPHY_TABLE.get());
                             }
                     )
                     .build());

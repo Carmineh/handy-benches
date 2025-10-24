@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "pockettools:item/pocket_crafting_table"
+    "layer0": "handybenches:item/handy_cartography_table"
   }
 }

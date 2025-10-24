@@ -1,4 +1,4 @@
-package net.manny.pockettools.common.menu;
+package net.manny.handybenches.common.menu;
 
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -8,17 +8,17 @@ import net.minecraft.world.inventory.StonecutterMenu;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
-public class PocketStoneCutterMenu extends StonecutterMenu {
+public class HandyStoneCutterMenu extends StonecutterMenu {
 
-    public PocketStoneCutterMenu(int containerId, Inventory playerInventory) {
+    public HandyStoneCutterMenu(int containerId, Inventory playerInventory) {
         super(containerId, playerInventory);
     }
 
-    public PocketStoneCutterMenu(int containerId, Inventory playerInventory, Player player) {
+    public HandyStoneCutterMenu(int containerId, Inventory playerInventory, Player player) {
         super(containerId, playerInventory);
     }
 
-    public PocketStoneCutterMenu(int containerId, Inventory playerInventory, ContainerLevelAccess access) {
+    public HandyStoneCutterMenu(int containerId, Inventory playerInventory, ContainerLevelAccess access) {
         super(containerId, playerInventory, access);
     }
 

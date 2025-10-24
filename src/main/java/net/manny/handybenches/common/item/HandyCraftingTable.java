@@ -1,6 +1,6 @@
-package net.manny.pockettools.common.item;
+package net.manny.handybenches.common.item;
 
-import net.manny.pockettools.common.menu.PocketCraftingMenu;
+import net.manny.handybenches.common.menu.HandyCraftingMenu;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
@@ -15,11 +15,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
-public class PocketCraftingTable extends Item {
+public class HandyCraftingTable extends Item {
 
     private static final Component CONTAINER_TITLE = Component.translatable("container.crafting");
 
-    public PocketCraftingTable(Properties properties) {
+    public HandyCraftingTable(Properties properties) {
         super(properties);
     }
 
@@ -35,7 +35,7 @@ public class PocketCraftingTable extends Item {
 
                 @Override
                 public @Nullable AbstractContainerMenu createMenu(int i, Inventory inventory, Player player) {
-                    return new PocketCraftingMenu(i, inventory, player);
+                    return new HandyCraftingMenu(i, inventory, player);
                 }
             };
 
@@ -47,9 +47,4 @@ public class PocketCraftingTable extends Item {
 
         return InteractionResultHolder.success(player.getItemInHand(usedHand));
     }
-
-
-
-
-
 }

@@ -1,4 +1,4 @@
-package net.manny.pockettools.common.menu;
+package net.manny.handybenches.common.menu;
 
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.Container;
@@ -17,21 +17,21 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Optional;
 
 
-public class PocketCraftingMenu extends CraftingMenu {
+public class HandyCraftingMenu extends CraftingMenu {
 
     private final Level level;
 
-    public PocketCraftingMenu(int containerId, Inventory playerInventory) {
+    public HandyCraftingMenu(int containerId, Inventory playerInventory) {
         super(containerId, playerInventory);
         this.level = this.player.level();
     }
 
-    public PocketCraftingMenu(int containerId, Inventory playerInventory, Player player) {
+    public HandyCraftingMenu(int containerId, Inventory playerInventory, Player player) {
         super(containerId, playerInventory);
         this.level = this.player.level();
     }
 
-    public PocketCraftingMenu(int containerId, Inventory playerInventory, ContainerLevelAccess access) {
+    public HandyCraftingMenu(int containerId, Inventory playerInventory, ContainerLevelAccess access) {
         super(containerId, playerInventory, access);
         this.level = this.player.level();
     }
